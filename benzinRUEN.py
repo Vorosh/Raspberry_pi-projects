@@ -61,7 +61,6 @@ def ButtonPressed():
         if ((GPIO.input(23) == False) and (GPIO.input(24) == False) and (GPIO.input(27) == False) and (GPIO.input(22) == True)) :
             if flag1 == 0:
                 sleep(1)
-                #print ('loop start')
                 komanda = 1
                 flag1 = 1
                 flag2 = 0
@@ -76,7 +75,6 @@ def ButtonPressed():
         elif ((GPIO.input(23) == False) and (GPIO.input(24) == False) and (GPIO.input(27) == True) and (GPIO.input(22) == True)) :
             if flag2 == 0:
                 sleep(1)
-                #print ('vstavte pistole v bak. Vibran 27 benzin')
                 komanda = 2
                 flag1 = 0
                 flag2 = 1
@@ -90,7 +88,6 @@ def ButtonPressed():
         elif ((GPIO.input(23) == False) and (GPIO.input(24) == True) and (GPIO.input(27) == False) and (GPIO.input(22) == True)) :
             if flag3 == 0:
                 sleep(1)
-                #print ('vstavte pistole v bak Vibran 24 benzin')
                 komanda = 7
                 flag1 = 0
                 flag2 = 0
@@ -104,7 +101,6 @@ def ButtonPressed():
         elif ((GPIO.input(23) == True) and (GPIO.input(24) == False) and (GPIO.input(27) == False) and (GPIO.input(22) == True)) :
             if flag4 == 0:
                 sleep(1)
-                #print ('vstavte pistole v bak Vibran 23 benzin')
                 komanda = 8
                 flag1 = 0
                 flag2 = 0
@@ -118,7 +114,6 @@ def ButtonPressed():
         elif ((GPIO.input(23) == False) and (GPIO.input(24) == False) and (GPIO.input(27) == True) and (GPIO.input(22) == False)) :
             if flag5 == 0:
                 sleep(1)
-                #print ('video o 27 benzine')
                 komanda = 3
                 flag1 = 0
                 flag2 = 0
@@ -132,7 +127,6 @@ def ButtonPressed():
         elif ((GPIO.input(23) == False) and (GPIO.input(24) == True) and (GPIO.input(27) == False) and (GPIO.input(22) == False)) :
             if flag6 == 0:
                 sleep(1)
-                #print ('video o 24 benzine')
                 komanda = 4
                 flag1 = 0
                 flag2 = 0
@@ -146,7 +140,6 @@ def ButtonPressed():
         elif ((GPIO.input(23) == True) and (GPIO.input(24) == False) and (GPIO.input(27) == False) and (GPIO.input(22) == False)) :
             if flag7 == 0:
                 sleep(1)
-                #print ('video o 23 benzine')
                 komanda = 5
                 flag1 = 0
                 flag2 = 0
@@ -160,7 +153,6 @@ def ButtonPressed():
         else:
             if flag8 == 0:
                 sleep(1)
-                #print ('vibirite odin pistolet i vstavte v bak')
                 komanda = 6
                 flag1 = 0
                 flag2 = 0
@@ -170,8 +162,6 @@ def ButtonPressed():
                 flag6 = 0
                 flag7 = 0
                 flag8 = 1
-
-        #sleep(0.1);
 
 def PlayerStart():
     global komanda
