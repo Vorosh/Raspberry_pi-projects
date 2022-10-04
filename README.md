@@ -1,2 +1,2 @@
-# RPI-projects
+# Raspberry_Pi-projects
 Some RPI projects
